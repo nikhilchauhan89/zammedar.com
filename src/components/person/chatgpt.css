@@ -1,0 +1,2040 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #222;
+}
+
+/* ===============================
+   BANNER SECTION
+================================*/
+/* 🌇 Banner Section */
+.banner {
+  width: 100%;
+  height: 80vh;
+  background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 25px;
+  border-radius: 12px;
+  color: white;
+}
+
+/* 🔍 Search Filters */
+.imgInput {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sale {
+  width: 200px;
+}
+
+.imgInput button {
+  background-color: #ff6b00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.imgInput button:hover {
+  background-color: #e65a00;
+  transform: scale(1.05);
+}
+
+/* 🏠 Filter Buttons (Sale / Rent / Lease) */
+.carda {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 20px 0;
+}
+
+.card1 button {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card1 button:hover {
+  background: #ff6b00;
+  color: #fff;
+}
+
+/* 🧭 Slider */
+.slider {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.card2 {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.card2:hover {
+  transform: translateY(-6px);
+}
+
+.card2 img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.card3 {
+  padding: 15px;
+}
+
+.card3 .new {
+  color: #0e0f0e;
+  font-weight: bold;
+}
+
+.card3 .com {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.card3 .sect {
+  color: #777;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.card3 Button {
+  background-color: #ff6b00 !important;
+  color: white !important;
+  border-radius: 10px !important;
+  padding: 6px 12px !important;
+}
+
+.whatsapp {
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.whatsapp:hover {
+  background-color: #1c1c1c;
+}
+
+/* 🎥 Video Section */
+.video {
+  width: 100%;
+  background: #f8f8f8;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.video1 {
+  width: 90%;
+  margin: auto;
+}
+
+.p2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.p1 {
+  width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.p1 img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.p1 p {
+  font-size: 15px;
+  color: #444;
+  margin: 10px;
+}
+
+.stop {
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  font-size: 60px !important;
+  opacity: 0.9;
+  transition: all 0.3s;
+}
+
+.stop:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.btn {
+  position: absolute;
+  bottom: 2px;
+  right: 17px;        /* 👈 move to bottom-right corner */
+  background-color: #ff6b00;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+  background-color: #e65c00;
+  transform: scale(1.05);
+}
+
+
+
+
+/* 🪄 Modal */
+.modalUi-frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modalUi-card1 {
+  width: 70%;
+  max-width: 800px;
+  background: white;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-x1 {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 1.6rem;
+    width: 90%;
+  }
+
+  .imgInput {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider-container {
+    width: 100%;
+  }
+
+  .p2 {
+    flex-direction: column;
+  }
+
+  .p1 {
+    width: 90%;
+  }
+}
+
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================*/
+@media (max-width: 970px) {
+  .banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .imgInput {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgInput .sale,
+  .imgInput button {
+    width: 90%;
+  }
+
+  .video1 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .nav {
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .banner h1 {
+    font-size: 20px;
+  }
+
+  .video {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .video1, .video2, .video3 {
+    width: 45%;
+  }
+
+  .video1 p {
+    font-size: 12px;
+  }
+
+  .footer1 {
+    margin-left: 2rem;
+    overflow: hidden;
+  }
+
+  .b {
+    width: 458px;
+  }
+}  
+  
+  
+  
+  /* ===============================
+   GLOBAL NAVBAR STYLES
+================================*/
+.nav {
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ===============================
+   LOGO SECTION
+================================*/
+.nav img {
+  height: 55px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* ===============================
+   LOCATION SELECTOR
+================================*/
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo .sale {
+  width: 150px;
+}
+
+/* ===============================
+   NAV LINKS
+================================*/
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+  color: #007bff;
+}
+
+/* ===============================
+   ADD PROPERTY BUTTON
+================================*/
+.prop {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.prop:hover {
+  background-color: #0056b3;
+}
+
+/* ===============================
+   ICONS
+================================*/
+.nav ul a svg {
+  font-size: 1.8rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav ul a svg:hover {
+  color: #007bff;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================*/
+
+/* Tablet & smaller desktop */
+@media (max-width: 970px) {
+  .nav {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .nav ul {
+    gap: 0.6rem;
+  }
+
+  .nav ul li a {
+    font-size: 12.5px;
+  }
+
+  .prop {
+    font-size: 12.5px;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 700px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 0.5rem 0.8rem;
+    gap: 0.3rem; /* reduced spacing */
+  }
+
+  .nav img {
+    height: 32px; /* smaller logo */
+    margin-bottom: 0.3rem;
+  }
+
+  .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0.3rem;
+  }
+
+  .nav ul {
+    flex-direction: row; /* stay in one line */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav ul li a {
+    font-size: 11.5px;
+    padding: 0.2rem 0.3rem;
+  }
+
+  .prop {
+    font-size: 11px;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    margin-top: 0.2rem;
+  }
+}
+
+/* Extra small (phones under 480px) */
+@media (max-width: 480px) {
+  .nav {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .nav img {
+    height: 28px;
+  }
+
+  .nav ul {
+    gap: 0.3rem;
+  }
+
+  .nav ul li a {
+    font-size: 10.5px;
+  }
+
+  .prop {
+    font-size: 10px;
+    padding: 0.2rem 0.4rem;
+    border-radius: 10px;
+  }
+}
+
+
+/* ===============================
+   FOOTER MAIN SECTION
+================================*/
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+
+/* ===============================
+   FOOTER COLUMN 1 (LOGO & ABOUT)
+================================*/
+.footer1 {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.footer1 img {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.footer1 .para p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 1rem;
+}
+
+.footer1 .para1 a {
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ===============================
+   FOOTER COLUMN 2 (CONTACT INFO)
+================================*/
+.footer2 {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+
+.footer2 h3 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer2 li {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.8;
+}
+
+.footer2 li a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer2 li a:hover {
+  color: #ffffff;
+}
+
+/* ===============================
+   FOOTER COLUMN 3 (QUICK LINKS)
+================================*/
+.footer3 {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+
+.footer3 h3 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer3 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer3 li {
+  margin-bottom: 0.5rem;
+}
+
+.footer3 a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer3 a:hover {
+  color: #ffffff;
+}
+
+/* ===============================
+   COPYRIGHT BAR (FOOTER 4)
+================================*/
+.footer4 {
+  background-color: #0f0f0f;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-top: 1px solid #222;
+}
+
+.footer4 .image4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer4 p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer4 ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.footer4 li a {
+  text-decoration: none;
+  color: #bbb;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer4 li a:hover {
+  color: #ffffff;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================*/
+@media (max-width: 970px) {
+  .footer {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer1,
+  .footer2,
+  .footer3 {
+    text-align: center;
+  }
+
+  .footer4 .image4 {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .footer1 {
+    margin-left: 2rem;
+    overflow: hidden;
+  }
+
+  .b {
+    width: 458px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer4 ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* ===============================
+   PHONE APP PROMO SECTION
+================================*/
+.phone {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #f3f8ff, #e9f2ff);
+  padding: 4rem 2rem;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* ===============================
+   TEXT SECTION
+================================*/
+.phone1 {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+.phone1 p {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.4;
+}
+
+.phone1 .ps {
+  font-size: 16px;
+  color: #555;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+/* ===============================
+   MOBILE IMAGE SECTION
+================================*/
+.phone2 {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.phone2 .im2 {
+  height: 300px;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.phone2 .im2:hover {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   APP STORE LINKS
+================================*/
+.phone3 {
+  flex: 1 1 300px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phonec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.phonec1 .im1 {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.phonec1 .im1:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* ===============================
+   LAUNCHING TEXT
+================================*/
+.lauch p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #007bff;
+  text-align: center;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================*/
+@media (max-width: 970px) {
+  .phone {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .phone1 p {
+    font-size: 24px;
+  }
+
+  .phone2 .im2 {
+    height: 250px;
+  }
+
+  .phone3 {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .phone {
+    padding: 2rem 1rem;
+  }
+
+  .phone1 p {
+    font-size: 22px;
+  }
+
+  .phone1 .ps {
+    font-size: 15px;
+  }
+
+  .phone2 .im2 {
+    height: 220px;
+  }
+
+  .phonec1 .im1 {
+    height: 45px;
+  }
+
+  .lauch p {
+    font-size: 18px;
+  }
+}
+
+/* ====== PAGE WRAPPER ====== */
+.property {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 40px;
+  background-color: #fafafa;
+}
+
+/* ====== SIDEBAR ====== */
+.sidebar {
+  flex: 0 0 280px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  align-self: flex-start;
+}
+
+/* Make sidebar stretch same height as cards area */
+.property {
+  align-items: stretch;
+}
+
+/* ===== FILTERS ===== */
+.filter {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.filterbtn button {
+  width: 100%;
+  background-color: #0e8a00;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 15px;
+}
+
+.filterbtn button:hover {
+  background-color: #056a00;
+}
+
+/* ===== CHECKBOX SECTION ===== */
+.check h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.filt_check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.filt_check label {
+  font-size: 14px;
+  color: #444;
+}
+
+/* ===== RANGE SLIDER ===== */
+.minmax {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* ===== ALL CARDS CONTAINER ===== */
+.allcard {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  align-content: start;
+}
+
+/* ===== CARD STYLE ===== */
+.card2 {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card2:hover {
+  transform: translateY(-4px);
+}
+
+.card2 img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  background-color: #eee;
+}
+
+/* ===== CARD LABELS ===== */
+.p {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #0ebd02;
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+/* ===== CARD CONTENT ===== */
+.card3 {
+  padding: 12px;
+}
+
+.com {
+  font-weight: 600;
+  color: #222;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.sect {
+  color: #555;
+  font-size: 12px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+/* ===== BUTTON SECTION ===== */
+.card3 Button {
+  background-color: #198754 !important;
+  color: #fff !important;
+  border-radius: 20px !important;
+  font-size: 11px !important;
+  padding: 4px 10px !important;
+  min-width: 80px !important;
+  text-transform: none !important;
+  transition: all 0.3s;
+}
+
+.card3 Button:hover {
+  background-color: #157347 !important;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+  border: none;
+  border-radius: 20px;
+  font-size: 10px;
+  padding: 4px 8px;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.2;
+  transition: all 0.3s;
+  width: 90px;
+  height: 40px;
+  position: relative;
+  margin-left: 2.8rem;
+}
+
+.whatsapp:hover {
+  background-color: #222;
+}
+
+/* ===== PAGINATION BUTTONS ===== */
+.goBtn {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.Gopre {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+
+.Gopre:hover {
+  background-color: #0e8a00;
+  color: #fff;
+}
+
+.activeBt {
+  background-color: #0e8a00;
+  color: #fff;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 950px) {
+  .property {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+  }
+
+  .allcard {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .card2 img {
+    height: 140px;
+  }
+
+  .card3 Button,
+  .whatsapp {
+    font-size: 10px !important;
+    padding: 3px 6px !important;
+    height: 35px;
+  }
+
+  .Gopre {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
+
+
+/* ===============================
+   GLOBAL STYLES
+================================*/
+.emi {
+  text-align: center;
+background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") no-repeat center center/cover;
+  color: #fff;
+  padding: 10rem 0;
+  font-family: "Poppins", sans-serif;
+  object-fit: cover;
+}
+
+.emi h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* ===============================
+   MAIN CONTAINER
+================================*/
+.emi0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  background-color: #f8f9fa;
+}
+
+.emi1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem 3rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* ===============================
+   CALCULATOR SECTION
+================================*/
+.emi2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.calculator {
+  flex: 1;
+  min-width: 300px;
+}
+
+.calculator p {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.lakh, .percent, .year {
+  color: #0ca963;
+  font-weight: 600;
+}
+
+.MuiSlider-root {
+  color: #0ca963 !important;
+}
+
+/* ===============================
+   PIE CHART
+================================*/
+.piechart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===============================
+   RESULT SECTION
+================================*/
+.emi3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rangechart {
+  width: 100%;
+  background: #f1f8f4;
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  text-align: left;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.rangechart p {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+}
+
+.rangechart span {
+  font-weight: 600;
+  color: #0f5132;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================*/
+@media (max-width: 900px) {
+  .emi1 {
+    padding: 1.5rem;
+  }
+
+  .emi2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calculator {
+    width: 100%;
+  }
+
+  .piechart {
+    margin-top: 1rem;
+  }
+
+  .rangechart {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .emi h1 {
+    font-size: 1.5rem;
+  }
+
+  .emi1 {
+    box-shadow: none;
+    padding: 1rem;
+  }
+
+  .calculator p {
+    font-size: 0.9rem;
+  }
+
+  .rangechart p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* ===============================
+   LOGIN PAGE STYLES
+================================*/
+
+/* HEADER SECTION */
+.log {
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.log img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.log h1 {
+  position: relative;
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+/* ===============================
+   FORM SECTION
+================================*/
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  background-color: #f8f9fa;
+}
+
+.form1 {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  padding: 2.5rem 2rem;
+}
+
+.insideform {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* LABEL STYLING */
+.form-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* INPUT FIELDS */
+.form-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.2s ease;
+  font-size: 15px;
+}
+
+.form-input:focus {
+  border-color: #077845;
+  box-shadow: 0 0 0 3px rgba(7, 120, 69, 0.15);
+}
+
+/* BUTTON */
+.form-button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background-color: #077845;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #056b3d;
+  transform: scale(1.03);
+}
+
+/* CREATE ACCOUNT LINK */
+.form a {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: #077845;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.form a:hover {
+  color: #056b3d;
+  text-decoration: underline;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================*/
+@media (max-width: 600px) {
+  .log h1 {
+    font-size: 1.8rem;
+  }
+
+  .form1 {
+    width: 90%;
+    padding: 2rem 1.5rem;
+  }
+
+  .form-input {
+    font-size: 14px;
+  }
+
+  .form-button {
+    height: 45px;
+    font-size: 15px;
+  }
+}
+
+
+.log {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.log img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.log h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* ===== SignUp Section ===== */
+.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  background: #f6f9fc;
+  min-height: 70vh;
+}
+
+.sign1 {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+  width: 480px;
+  max-width: 90%;
+  padding: 2.5rem 2rem;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.signhead p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #077845;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Form Styling ===== */
+.signform {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.allcoll {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.col1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col1 label {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 500;
+}
+
+.col1 input,
+.colfile input,
+.col1s {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 14.5px;
+  background-color: #fafafa;
+}
+
+.col1 input:focus,
+.colfile input:focus,
+.col1s:focus {
+  border-color: #077845;
+  box-shadow: 0 0 4px rgba(7, 120, 69, 0.4);
+  background-color: #fff;
+}
+
+.colfile {
+  display: flex;
+  flex-direction: column;
+}
+
+.col1s {
+  width: 100%;
+  color: #333;
+}
+
+/* ===== Submit Button ===== */
+.btnB {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.mainBtn {
+  background-color: #077845;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mainBtn:hover {
+  background-color: #056b3d;
+  transform: translateY(-2px);
+}
+
+.btnB p {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #333;
+}
+
+/* ===== Error Messages ===== */
+p[style*="color: red"] {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 480px) {
+  .sign1 {
+    width: 100%;
+    padding: 1.8rem;
+  }
+
+  .mainBtn {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+  background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") no-repeat center center/cover;
+}
+
+.about img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.about h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* ===== Video Card Section ===== */
+.see {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.8rem;
+  padding: 3rem 2rem;
+  background: #f8fafc;
+}
+
+.see1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.localtylist {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.localtylist img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.localtylist:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+}
+
+.localtylist:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== Play Icon Overlay ===== */
+.localtylist a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 55px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.localtylist:hover a {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* ===== Card Text ===== */
+.localtylist p {
+  font-size: 14.5px;
+  padding: 0.8rem;
+  color: #333;
+  text-align: center;
+  background: #fff;
+  line-height: 1.5;
+}
+
+/* ===== Pagination Section ===== */
+.paginationDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  background: #f8fafc;
+}
+
+.goBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.Gopre {
+  background-color: #077845;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Gopre:hover {
+  background-color: #06653a;
+  transform: scale(1.05);
+}
+
+.activeBtn {
+  background-color: #055a31 !important;
+  transform: scale(1.1);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .about .hee {
+    font-size: 2rem;
+  }
+
+  .see {
+    padding: 2rem 1rem;
+    gap: 1.2rem;
+  }
+
+  .localtylist img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Gopre {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+
+
+
+/* ===== Main Section ===== */
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: #034c2e;
+  font-size: 1.8rem;
+}
+
+p {
+  text-align: center;
+  color: #555;
+  max-width: 800px;
+  margin: 0.5rem auto 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ====== View Container ====== */
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 3rem;
+  flex-wrap: wrap;
+}
+
+/* Left Side Image */
+.viewa img {
+  width: 480px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Right Side Form Section */
+.viewb {
+  width: 420px;
+  background-color: #f8f9fa;
+  padding: 1.8rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Buttons Section ===== */
+.viewH {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.viewH a {
+  background-color: #0dc143;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.viewH button {
+  background-color: #034c2e;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.viewH button:hover {
+  background-color: #05663f;
+}
+
+/* ===== Form ===== */
+.formS {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.formA, .formM {
+  display: flex;
+  flex-direction: column;
+}
+
+.formA label,
+.formM label {
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.formA input,
+.formM input {
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.formA input:focus,
+.formM input:focus {
+  border-color: #034c2e;
+}
+
+.formS button {
+  margin-top: 1rem;
+  background-color: #034c2e;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formS button:hover {
+  background-color: #05663f;
+}
+
+/* ===== Modal ===== */
+.modalUi-frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modalUi-card {
+  background: #fff;
+  width: 320px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: relative;
+  text-align: center;
+}
+
+.modal-x {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.modalUi-title p {
+  font-size: 1.2rem;
+  color: #034c2e;
+  font-weight: 600;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.number .moda {
+  background-color: #034c2e;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.call {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+/* ===== Table Section ===== */
+.table {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem;
+}
+
+.table1 {
+  width: 80%;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+}
+
+.overview_propertyDetail {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.overview_propertyDetail li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.overview_propertyDetail li .left {
+  font-weight: 600;
+  color: #333;
+}
+
+.overview_propertyDetail li .right {
+  color: #555;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 970px) {
+  .view {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .viewa img {
+    width: 90%;
+  }
+
+  .viewb {
+    width: 90%;
+  }
+
+  .table1 {
+    width: 95%;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  .viewH a, .viewH button {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .modalUi-card {
+    width: 280px;
+    padding: 1.2rem;
+  }
+
+  .overview_propertyDetail li {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.6rem;
+  }
+}
