@@ -173,7 +173,6 @@ const Home = () => {
 
             <div className='reactplay' style={{ width: "94%", height: "300px" }}>
               <ReactPlayer
-
                 src="https://www.youtube.com/watch?v=mJVuZiK9a6I"
                 width="97%"
                 height="100%"
@@ -187,7 +186,7 @@ const Home = () => {
       }
       <div className='banner'>
         <img />
-        <h1>Making buying, selling, and renting easier than ever!</h1>
+        {/* <h1>Making buying, selling, and renting easier than ever!</h1> */}
         <div className='imgInput'>
           <Select
             placeholder="Select Listing Type"
